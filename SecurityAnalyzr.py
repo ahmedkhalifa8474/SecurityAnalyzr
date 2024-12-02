@@ -9,7 +9,7 @@ from PyPDF2 import PdfReader
 import pyfiglet
 
 # VirusTotal API Key
-API_KEY = 'e20703e48bc155a08acd59b0aba44f66446d88c6fdadb6f690c0bf819d556e0c'
+API_KEY = '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$6f690c0bf819d556e0c'
 
 # Function to display ASCII banner
 def display_banner():
