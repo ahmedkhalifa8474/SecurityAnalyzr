@@ -1,71 +1,59 @@
-SecurityAnalyzr
+# SecurityAnalyzr  
 
-SecurityAnalyzr is a powerful file analysis tool designed for cybersecurity professionals to investigate suspicious files quickly and effectively.
+**SecurityAnalyzr** is a powerful file analysis tool designed for cybersecurity professionals to investigate suspicious files quickly and effectively. It integrates with VirusTotal and supports macro detection and phishing link analysis, providing comprehensive insights into potentially malicious attachments.
 
- It integrates with VirusTotal and supports macro detection and phishing link analysis, providing comprehensive insights into potentially malicious attachments.
+---
 
-Features
+## **Features**
+- **VirusTotal Integration**  
+  Automatically checks file hashes against VirusTotal to identify malicious files and malware families.  
 
-VirusTotal Integration
+- **Macro Detection in Word Documents**  
+  Detects macros in both `.doc` and `.docx` files, highlighting potential malicious scripts.  
 
-Automatically checks file hashes against VirusTotal to identify malicious files and malware families.
+- **Phishing Link Detection in PDFs**  
+  Scans PDF files for suspicious URLs, helping identify potential phishing attempts.  
 
-Macro Detection in Word Documents
+- **File Hashing**  
+  Generates SHA-256 hashes of files for comparison against known threat databases.  
 
-Detects macros in both .doc and .docx files, highlighting potential malicious scripts.
+- **Real-Time Reporting**  
+  Outputs detailed results, including MIME type, file hash, virus status, and malware family information.  
 
-Phishing Link Detection in PDFs
+---
 
-Scans PDF files for suspicious URLs, helping identify potential phishing attempts.
+## **Requirements**
+Before running **SecurityAnalyzr**, ensure you have the following installed:  
+- Python 3.6+  
+- Required Python libraries:  
+  ```bash
+  pip install requests pyfiglet PyPDF2 olefile
 
-File Hashing
 
-Generates SHA-256 hashes of files for comparison against known threat databases.
+## **Installation**
 
-Real-Time Reporting
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ahmedkhalifa8474/SecurityAnalyzr.git
 
-Outputs detailed results, including MIME type, file hash, virus status, and malware family information.
-
-Requirements
-
-Before running SecurityAnalyzr, ensure you have the following installed:
-
-Python 3.6+
-
-Required Python libraries
-:
-pip install requests pyfiglet PyPDF2 olefile
-Installation
-
-Clone the repository:
-
-git clone https://github.com/ahmedkhalifa8474/SecurityAnalyzr.git
-
-cd SecurityAnalyzr
-
-Install the dependencies:
+   cd SecurityAnalyzr
 
 pip install -r requirements.txt
 
-Update the VirusTotal API key in the script:
-
-Open the SecurityAnalyzr.py file.
-
-Replace the placeholder API_KEY with your own VirusTotal API key.
 Usage
 
 Run the script:
 
 python SecurityAnalyzr.py
 
-Input the full file path of the attachment you want to analyze.
-
-View the analysis report, which will include:
-
-File type and hash.
-
 VirusTotal scan results.
 
 Macro detection for Word files.
+
+![image](https://github.com/user-attachments/assets/399b9208-405a-4025-aabf-72d087bb95aa)
+
+![image](https://github.com/user-attachments/assets/ff0845cd-48c7-4560-a038-8193468d47e1)
+
+
 
 Phishing link detection for PDFs.
